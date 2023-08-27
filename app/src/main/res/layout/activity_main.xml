@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blackbg"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY STOPWATCH"
+            android:textSize="40sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/id_timeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:layout_marginLeft="70dp"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="70sp" />
+        <Button
+            android:layout_width="128dp"
+            android:id="@+id/start"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="128dp"
+            android:text="start"
+            android:textColor="@color/black"
+            android:layout_marginTop="72dp"
+            android:drawableLeft="@drawable/baseline_play_circle_24"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="329dp"
+            android:backgroundTint="@color/white"
+            android:onClick="onStart"
+            />
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="259dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/baseline_pause_circle_24"
+            android:onClick="onStop"
+            android:text="Hold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="182dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/baseline_stop_circle_24"
+            android:onClick="onReset"
+            android:text="Stop"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
